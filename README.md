@@ -14,8 +14,8 @@
 4. Otherwise, the player loses $1.
 
 <br>
-<br>
  The program asks the user how many dollars they have to bet.
+<br>
 
 1. If the starting bet is less than or equal to 0, display an error message.
 2. When the user clicks the Play button, the program then rolls the dice repeatedly until all the money is gone.
