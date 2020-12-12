@@ -15,19 +15,25 @@ function myPlay() {
    
      } else{
          if(bet <= 0){ 
-             console.log("Invalid bet")
-             alert("Number must be greater than 0!");
+             console.log("Invalid bet");
+             alert("Bet must be greater than 0!");
              document.getElementById("bet").innerHTML = "";
              document.getElementById("tableBet").innerHTML = "";
    
-   
          } else{
-             console.log("Lets Play!")
+           if(bet >= 10000){ // limited bet size to prevent slow down
+             console.log("Too big!")
+             alert("Bet must be less than 10,000!")
+             document.getElementById("bet").innerHTML = "";
+             document.getElementById("tableBet").innerHTML = "";
+
+           }else{
+             console.log("Lets Play!");
              document.getElementById("bet").innerHTML = "$" + bet +".00" ;
              document.getElementById("tableBet").innerHTML = "$" + bet + ".00";
          }
      }
-                      
+    }                   
   //   dice game intialized
 
    var rollDice = 0;
@@ -81,5 +87,4 @@ function myPlay() {
    
 
    }
-           
            
