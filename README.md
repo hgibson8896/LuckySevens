@@ -1,4 +1,4 @@
-## ** Lucky Sevens Game **
+## **Lucky Sevens Game**
 <br>
 <br>
 
