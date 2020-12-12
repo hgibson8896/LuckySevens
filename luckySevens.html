@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Sevens</title>
+    
+
+    <style>
+        
+        body{
+
+            margin-top:100px;
+            font-family: monospace;
+            background-attachment: whitesmoke;
+            text-align: center;
+            font-size: 1.5em;
+            
+            }
+
+        .starting{
+
+            border: 1px solid black;
+            padding: 0px 20px 0px 20px;
+        }
+
+        button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            font-size: 1.5rem; 
+            margin:10px;
+
+        }
+
+        button:hover{
+            background-color: #7000ba;
+
+
+        }
+
+        table{
+            margin: 50px auto 0px auto;
+            width: 40%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding:10px;
+            border: 1px solid black;
+            text-align: left;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Lucky Sevens</h1>
+    <br>
+    
+
+    <h4>Starting Bet:<span class= "starting" id= "bet">$0.00</span></h4>
+    <br>
+
+    <button onclick="myPlay()">Play</button>    
+    <br>
+    <br>
+    <hr>
+
+    <table>
+        <tr>
+            <td>Starting Bet</td>
+            <td><span id= "tableBet">$###.##</span></td>
+        </tr>
+        <tr>
+            <td>Total Rolls Before Going Broke</td>
+            <td id="broke">#</td>
+        </tr>
+        <tr>
+            <td>Highest Amount Won</td>
+            <td><span id="highest"> $####.##</span></td>
+        </tr>
+        <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td id="roll">###</td>
+        </tr>
+    </table>
+
+
+ 
+
+<script src="script.js" type= "text/javascript"></script>
+
+
+   
+    
+</body>
+</html>
