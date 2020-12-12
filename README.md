@@ -13,7 +13,6 @@
 3. If the sum of the 2 dice is equal to 7, the player wins $4
 4. Otherwise, the player loses $1.
 
-<br>
  The program asks the user how many dollars they have to bet.
 <br>
 
