@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## ** Lucky Sevens Game **
+<br>
+<br>
 
-You can use the [editor on GitHub](https://github.com/hgibson8896/LuckySevens/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## The Software Guild
+## Intro to Web Development
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. As long as there is money, play the game.
+2. Each round, the program rolls a virtual pair of dice for the user.
+ &nbsp;&nbsp; - If the sum of the 2 dice is equal to 7, the player wins $4
+ &nbsp; &nbsp; - Otherwise, the player loses $1.
+<br>
+ The program asks the user how many dollars they have to bet.
+ <br>
 
-```markdown
-Syntax highlighted code block
+3. If the starting bet is less than or equal to 0, display an error message.
+4. When the user clicks the Play button, the program then rolls the dice repeatedly until all the money is gone.
+5. The program keeps track of how many rolls were taken before the money ran out.
+6. The program keeps track of the maximum amount of money held by the player.
+7. The program keeps track of how many rolls were taken at the point when the user held the most money.
+8. When the game is over, display output:
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hgibson8896/LuckySevens/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
