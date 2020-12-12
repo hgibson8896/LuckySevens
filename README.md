@@ -11,9 +11,9 @@
 1. As long as there is money, play the game.
 2. Each round, the program rolls a virtual pair of dice for the user.
 <br>
- - If the sum of the 2 dice is equal to 7, the player wins $4
+    If the sum of the 2 dice is equal to 7, the player wins $4
 <br>
-- Otherwise, the player loses $1.
+    Otherwise, the player loses $1.
 
 <br>
  The program asks the user how many dollars they have to bet.
