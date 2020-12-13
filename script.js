@@ -6,26 +6,20 @@ function myPlay() {
    bet = parseInt(bet);
  
    
-        if (isNaN(bet) || bet == null){ 
+ if (isNaN(bet) || bet == null){ 
          console.log("Invalid bet");
          alert("Please enter a number!");
-         document.getElementById("bet").innerHTML = "";
-         document.getElementById("tableBet").innerHTML = "";
-   
-   
+     
      } else{
          if(bet <= 0){ 
              console.log("Invalid bet");
              alert("Bet must be greater than 0!");
-             document.getElementById("bet").innerHTML = "";
-             document.getElementById("tableBet").innerHTML = "";
    
          } else{
            if(bet >= 10000){ // limited bet size to prevent slow down
-             console.log("Too big!")
-             alert("Bet must be less than 10,000!")
-             document.getElementById("bet").innerHTML = "";
-             document.getElementById("tableBet").innerHTML = "";
+             console.log("Too big!");
+             alert("Bet must be less than 10,000!");
+            return false;
 
            }else{
              console.log("Lets Play!");
@@ -33,7 +27,7 @@ function myPlay() {
              document.getElementById("tableBet").innerHTML = "$" + bet + ".00";
          }
      }
-    }                   
+   }                   
   //   dice game intialized
 
    var rollDice = 0;
@@ -70,21 +64,17 @@ function myPlay() {
           if(gameMoney > maxAmount){
            maxAmount = gameMoney;
            rollMax = rollDice;
-           console.log(maxAmount)
+           console.log(maxAmount);
            console.log(rollDice);
          }   
   
-  
+       
+         document.getElementById("highest").innerHTML = "$" + maxAmount + ".00";
+         document.getElementById("roll").innerHTML = rollMax;
+         document.getElementById("broke").innerHTML = rollDice;
 
 
       }
-
-     
-     document.getElementById("highest").innerHTML = "$" + maxAmount + ".00";
-     document.getElementById("roll").innerHTML = rollMax;
-     document.getElementById("broke").innerHTML = rollDice;
-
-   
 
    }
            
